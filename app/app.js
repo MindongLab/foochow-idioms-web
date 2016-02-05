@@ -2,7 +2,7 @@
     "use strict";
     angular.module('app', ['ngRoute'])
     .constant("SERVER_API_URL","http://fiapi.radiumz.org:2052/api")
-    .constant("SERVER_AUDIO_URL","http://idioms.mindong.asia/audio/")
+    .constant("SERVER_AUDIO_URL","http://idioms.mindong.asia/assets/audio/")
     
     .config(['$routeProvider',function ($routeProvider) {  
         $routeProvider  
