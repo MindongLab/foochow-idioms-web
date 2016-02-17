@@ -1,6 +1,6 @@
 
     <div id="logoRegion"  class="ms-bgColor-themePrimary">
-                    <div style="position: relative;left: 20px;" class="ms-font-xxl ms-fontColor-themeLighter">福州话熟语大全 Beta</div>
+                    <div style="position: relative;left: 20px;" class="ms-font-xxl ms-fontColor-themeLighter">福州话熟语大全</div>
                 </div>
     <div id="hamburgerButton" ng-click="hamburgerClicked()" class="ms-bgColor-themePrimary">
                     <div class="ms-font-xxl ms-fontColor-themeLighter"><i class="ms-Icon" ng-class="{'ms-Icon--x': isOpen, 'ms-Icon--menu': !isOpen}"></i></div>
@@ -8,9 +8,9 @@
     <div id="commandRegion">
         <div class="headerCommands ms-CommandBar" ng-init="init()">
             <div class="ms-CommandBar-sideCommands">
-                <div class="ms-CommandBarItem">
+                <div class="ms-CommandBarItem" ng-click="downloadClicked()">
                     <div class="ms-CommandBarItem-linkWrapper">
-                        <a class="ms-CommandBarItem-link"><span class="ms-CommandBarItem-icon headerCommands ms-Icon ms-Icon--star"></span> <span class="ms-CommandBarItem-commandText ms-font-m ms-font-weight-regular">收藏夹</span></a>
+                        <a class="ms-CommandBarItem-link"><span class="ms-CommandBarItem-icon headerCommands ms-Icon ms-Icon--download"></span> <span class="ms-CommandBarItem-commandText ms-font-m ms-font-weight-regular">下载 App</span></a>
                     </div>
                 </div>
                 <div class="ms-CommandBarItem" ng-click="helpClicked()">
@@ -25,7 +25,7 @@
                         <a class="ms-CommandBarItem-link"><span class="ms-CommandBarItem-icon headerCommands ms-Icon ms-Icon--home"></span> <span class="ms-CommandBarItem-commandText ms-font-m ms-font-weight-regular">首页</span></a>
                     </div>
                 </div>
-                <div class="ms-CommandBarItem">
+                <div class="ms-CommandBarItem" ng-click="ctgrClicked()">
                     <div class="ms-CommandBarItem-linkWrapper">
                         <a class="ms-CommandBarItem-link"><span class="ms-CommandBarItem-icon headerCommands ms-Icon ms-Icon--waffle"></span> <span class="ms-CommandBarItem-commandText ms-font-m ms-font-weight-regular">分类</span></a>
                     </div>

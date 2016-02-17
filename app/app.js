@@ -16,12 +16,15 @@
                 caseInsensitiveMatch: true
             })
             .when('/help', {  
-                templateUrl: 'app/views/help.tpl.html',  
+                templateUrl: 'app/views/help.tpl.html' 
                // controller: 'mainCtrl'  
             })
-            .when('/about', {  
-                templateUrl: 'app/views/about.tpl.html',  
-               // controller: 'mainCtrl'  
+            .when('/tags', {
+                templateUrl: 'app/views/tags.tpl.html' ,
+                controller: 'tagsCtrl'
+            })
+            .when('/apps', {  
+                templateUrl: 'app/views/apps.tpl.html'
             })      
             .otherwise({  
                 redirectTo: '/'  
