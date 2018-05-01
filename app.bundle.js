@@ -82,10 +82,10 @@ module.exports = angular;
 "use strict";
 
 angular.module('app', ['ui.router'])
-    .constant("SERVER_API_URL", "http://fiapi.radiumz.org:2052/api")
+    .constant("SERVER_API_URL", "http://fiapi.radiumz.org/api")
     .constant("SERVER_AUDIO_URL", "http://idioms.mindong.asia/assets/audio/")
-    .constant("CI_BUILD_NUMBER", "12")
-    .constant("CI_COMMIT_HASH", "297184e")
+    .constant("CI_BUILD_NUMBER", "29")
+    .constant("CI_COMMIT_HASH", "aca47ae")
     .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
         $stateProvider
             .state({
